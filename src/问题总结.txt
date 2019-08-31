@@ -1,0 +1,6 @@
+mybaits mapper只能放到resource下面。
+因为Mybatis3依赖的jar位 mybatis-spring-1.2.0.jar
+这个版本及以上的版本中对SqlSessionDaoSupport类中的'sqlSessionFactory'或'sqlSessionTemplate'注入方式进行了调整
+4.2.4.RELEASE 这个版本，支持servlet注入
+项目运行的时候，mapper指定文件需要classpath* 而单元测试，可要，可不要。
+javabean对象一定要用包装类 数据库字段要与javabean对象字段对应上。
